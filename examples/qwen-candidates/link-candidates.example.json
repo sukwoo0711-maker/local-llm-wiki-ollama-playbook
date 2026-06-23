@@ -1,0 +1,20 @@
+{
+  "tags": [
+    "api",
+    "security",
+    "operations"
+  ],
+  "wiki_links": [
+    {
+      "target": "api-authentication",
+      "reason": "The chunk discusses credential migration.",
+      "evidence_phrase": "migrate from API keys to OAuth clients"
+    },
+    {
+      "target": "incident-response",
+      "reason": "The chunk mentions rollback ownership.",
+      "evidence_phrase": "service owner approves rollback"
+    }
+  ],
+  "new_page_candidates": []
+}

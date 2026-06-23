@@ -1,0 +1,16 @@
+{
+  "must_ask": [
+    "What evidence proves that deprecated credentials are no longer used?",
+    "Who approves rollback if authentication migration fails?"
+  ],
+  "should_ask": [
+    "How long should compatibility mode remain active?",
+    "Which monitoring dashboard should be checked after rollout?"
+  ],
+  "evidence_needed": [
+    {
+      "question": "Where is the credential rotation policy documented?",
+      "likely_source": "security policy or runbook"
+    }
+  ]
+}
