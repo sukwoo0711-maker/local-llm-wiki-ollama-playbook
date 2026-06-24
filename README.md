@@ -61,6 +61,7 @@ local-llm-wiki-ollama-playbook/
     04-overnight-jobs.md
     05-command-patterns.md
     06-reference-map.md
+    07-automation-ideas-research.md
   examples/
     wiki/
       index.md

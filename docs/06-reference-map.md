@@ -18,3 +18,8 @@
 | Obsidian properties support metadata | Use `tags`, `aliases`, and custom properties in frontmatter | https://obsidian.md/help/properties |
 | Windows nightly automation | Use Task Scheduler/schtasks after manual dry-run | https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks-create |
 | PowerShell scheduled task actions | Use ScheduledTasks cmdlets for maintainable task registration | https://learn.microsoft.com/en-us/powershell/module/scheduledtasks/new-scheduledtaskaction |
+| LLM Wiki MCP pattern | Use CLI/MCP around a local Markdown wiki, SQLite index, context packs, lint and repair | https://github.com/Electro-resonance/LLM-WIKI-MCP |
+| Draft/review/publish workflow | Generate drafts first, review/approve, then publish to curated wiki | https://github.com/kytmanov/obsidian-llm-wiki-local |
+| Hybrid search and save-back | Use BM25/vector/rerank for query and save useful answers as synthesis pages | https://github.com/NiharShrotri/llm-wiki |
+| Knowledge compiler | Compile raw sources into citation-traceable interlinked Markdown pages | https://github.com/atomicstrata/llm-wiki-compiler |
+| Agent-maintained team wiki | Use per-agent notebooks, shared wiki promotion, fact logs, BM25/SQLite | https://news.hada.io/topic?id=28910 |
