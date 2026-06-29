@@ -1,0 +1,18 @@
+{
+  "id": "run.2026-06-30.obsidian_spec_refresh.example",
+  "title": "Example run log for Obsidian spec refresh",
+  "summary": "Compact run memory showing what should be retained after one refresh execution.",
+  "recipe_id": "task.obsidian_spec_refresh",
+  "result": "success",
+  "input_db_hash": "example-only",
+  "changed_specs": 37,
+  "generated_notes": 12000,
+  "broken_links": 0,
+  "warnings": [
+    "3 specs missing owner metadata"
+  ],
+  "source_refs": [
+    "examples/memory/obsidian-spec-refresh.recipe.json"
+  ],
+  "status": "example"
+}

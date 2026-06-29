@@ -5,3 +5,7 @@ logs/
 reports/
 knowledge/
 *.local.*
+/memory/
+*.sqlite
+*.sqlite3
+*.db

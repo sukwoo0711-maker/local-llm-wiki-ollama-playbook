@@ -1,0 +1,49 @@
+{
+  "id": "task.obsidian_spec_refresh",
+  "title": "옵시디언 표준사양 문서 최신화",
+  "summary": "specs.sqlite를 기준으로 generated Obsidian spec notes와 graph output을 갱신하는 반복 작업 recipe.",
+  "trigger_examples": [
+    "옵시디언에 표준사양 문서를 최신화해줘",
+    "사양 md 다시 생성해줘",
+    "SQLite 기준으로 Obsidian vault export 갱신"
+  ],
+  "inputs": [
+    "data/normalized/specs.sqlite",
+    "templates/spec_note.md.j2",
+    "configs/spec_schema.yml"
+  ],
+  "outputs": [
+    "vault/specs/*.md",
+    "vault/graph/spec_graph.md",
+    "reports/spec-refresh-YYYY-MM-DD.md"
+  ],
+  "steps": [
+    "Check sqlite schema version and source ledger.",
+    "Detect changed specs by source_hash.",
+    "Render generated Markdown notes from template.",
+    "Write source metadata as frontmatter and plain text, not wikilinks.",
+    "Regenerate explicit relation graph edges.",
+    "Run broken-link and generated-note count checks.",
+    "Create compact refresh report and run log."
+  ],
+  "rules": [
+    "SQLite specs table is the local normalized source of truth.",
+    "Obsidian generated notes are read-only views.",
+    "Human comments go to reviews/*.review.md.",
+    "section_path values such as 3.1.1 must not become Obsidian links or graph nodes.",
+    "Do not store raw original specs in agentic memory."
+  ],
+  "validation": [
+    "sqlite spec count equals generated note count.",
+    "no orphan generated notes remain.",
+    "no [[3.1.1]] style section links exist.",
+    "all generated notes include source_file, source_row or source_section, and source_hash.",
+    "refresh report lists changed, unchanged, added, removed, and warning counts."
+  ],
+  "source_refs": [
+    "docs/01-architecture.md",
+    "docs/07-automation-ideas-research.md",
+    "docs/09-agents-rule-self-maintenance.md"
+  ],
+  "status": "active"
+}
